@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <p>Enter the number by clicking on the button "Try It" to get the area of Rectangle.</p>
+
+    <button onclick="myFunction()">Try It</button>
+    
+    <p id="a"></p>
+    <p id="p"></p>
+    
+    <script>
+    function myFunction() {
+      
+    var length = prompt("Enter a whole number for the length of your rectangle.");
+    var width = prompt ("Enter a whole number for the width of your rectangle.");
+    
+       
+    var perimeter = (2 * length ) + (2 * width );
+    var area= length * width ;
+    
+     document.getElementById("a").innerHTML =
+            "Area of rectangle:"  + area;
+     document.getElementById("p").innerHTML =
+            "perimeter of rectangle:"  + perimeter ;
+    }
+    </script>
+    
+</body>
+</html>
